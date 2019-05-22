@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Scope of Variable</title>
+        <script type="text/javascript">
+        /*Arrays in JS*/
+        var car1 = "Audi";
+        var car2 = "Volvo";
+        var car3 = "BMW";
+                   
+                   // 0       1        2
+        var cars = ["BMW", "Volvo", "Audi"];
+        cars.push("Mini-Cooper");
+
+        for(var i=0; i<4; i++)
+        {
+        document.write("<h2>"+cars[i]+"</h2>"); 
+        }
+
+        for(var i=0; i<cars.length; i++)
+        {
+        document.write("<h2>"+cars[i]+"</h2>"); 
+        }
+
+        var arr1;
+        arr1 = new Array ("Mango", "Apple", "Banana");
+        
+        for(var i=0; i<3; i++)
+        {
+        document.write("<h1>"+arr1[i]+"</h1>");
+        }
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
