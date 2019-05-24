@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type=text/javascript>
+            var x = "<h1>hello world</h1>";
+            document.write(x);
+
+            var book = { topic: "JavaScript", fat: true};
+            document.write(book.topic);
+            document.write("<br>");
+            document.write(book["fat"]);
+            document.write("<br>");
+
+            var primes = [2, 3, 5, 7];
+            document.write(primes[primes.length-1])
+            document.write("<br>");
+            document.write(primes[0] + primes[1]);
+            document.write("<br>");
+            document.write(primes[0] + primes[4]);
+
+            function factorial(n) {
+                var p = 1;
+                for(var i = 2; i <= n; i++)
+                    p *= i;
+                return p;
+            }
+
+            /*
+            1=1*2
+            6=2*3          
+            24=6*4  
+            */
+
+            document.write("<br>");
+            document.write(factorial(4));
+            document.write("<br>");
+            document.write(factorial(5));
+            document.write("<br>");
+            document.write(factorial(6));
+            
+            </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
