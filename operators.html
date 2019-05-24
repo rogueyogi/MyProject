@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        document.write(3 + 2 + "<br>");  // => 5: addition
+        document.write(3 - 2 + "<br>");  // => 1: subtraction
+        document.write(3 * 2 + "<br>"); // => 6: multiplication
+        document.write(3 / 2 + "<br>"); // => 1.5: division
+        document.write("3" + "2" + "<br>"); // => "32": adds numbers, concatenates strings
+        
+        // Shorthand arithmetic operators in JS
+        var count = 0;                 // Define a variable
+        document.write((count++) + "<br>");       // Increment the variable AFTER returning
+        document.write((count) + "<br>");
+
+        document.write((++count) + "<br>");     // Increment the value BEFORE returning
+        document.write((--count) + "<br>");       // Decrement the variable (before returning)
+
+        document.write((count += 2) + "<br>");  // Add 2: same as count = count + 2;
+        document.write((count *= 3) + "<br>");  // Multiply by 3: same as count = count * 3;
+        document.write((count) + "<br>");        // variable names are expressions, too
+
+        // Equality and relational operators
+        // They evaluate to true or false
+        var x = 2;               // These "=" signs are assignment, not equality tests
+        var y = 3;               // These "=" signs are assignment, not equality tests
+
+        // if-else statement if x equals y
+        if (x == y) {            
+            document.write("<h1>x is equal y</h1>");
+        }
+        else {
+            document.write("<h2>x is not equal to y</h2>");
+        }
+
+        // if-else statement if x is not equal to y
+        if (x != y) {            
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if x is less than y
+        if (x < y) {            
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+        // if-else statement if x is less than or equal to y
+        if (x <= y) {           
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if x is greater than y
+        if (x > y) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if x is greater than or equal to y
+        if (x >= y) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if the string "two" is equal to the string "three"
+        if ("two" == "three") {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if the string "two" is greater than the string "three"
+        if ("two" > "three") {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement if the boolean value false is equal to the boolean value of x being greater than y
+        if (false == (x > y)) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement testing boolean value of x equaling 2 AND y equaling 3 (the defined values at line 24, line 25)
+        if ((x == 2) && (y == 3)) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement testing boolean value of x being greater than 3 OR y being less than 3
+        if ((x > 3) || (y < 3)) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        // if-else statement negating the boolean value of x being equal to y, x == y is false, so !false is true
+        if (!(x == y)) {
+            document.write("<h1>true</h1>");
+        }
+        else {
+            document.write("<h2>false</h2>");
+        }
+
+        
+        </script>
+    </head>
+</html>
